@@ -94,3 +94,10 @@ Requirements:
 - Just give a text output. No special styling or special characters like *.
 "
 ```
+
+## Helpful Links
+
+- **Documentation**: [View Documentation](https://documenter.getpostman.com/view/33618537/2sAYdcqs4G)
+- **Frontend Deployment**: [Visit Frontend](https://holly-6uz.pages.dev/)
+- **TanStack Query**: [Learn More](https://tanstack.com/query/latest)
+- **MongoDB Vector Search**: [Quick Start Guide](https://www.mongodb.com/docs/atlas/atlas-vector-search/tutorials/vector-search-quick-start/?tck=ai_as_web)
