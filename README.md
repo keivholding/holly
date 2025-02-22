@@ -23,7 +23,7 @@ Design and implement a system to identify the 10 most similar roles to the Plan 
 
 - **Architecture**: Adopted an MVC architecture to ensure the solution is extendable and maintainable, making it easy for any developer to pick up where I left off.
 - **Caching**: The frontend uses [TanStack Query](https://tanstack.com/query/latest) to cache fetch results. If you navigate to one job, go back, then return to the same job, you'll notice that it loads instantly as we read the data from the cache.
-- **Vector Search**: Chose vector search over manual parameters for its nuanced, scalable similarity analysis, efficiently identifying similar roles without subjective criteria and adapting well to evolving job descriptions.
+- **Vector Search**: Opted for vector search instead of manual parameters due to its nuanced and scalable approach. It efficiently identifies similar roles without relying on subjective criteria and adapts well to changes in job descriptions.
 
 ### Extensibility
 
@@ -36,7 +36,7 @@ Design and implement a system to identify the 10 most similar roles to the Plan 
 
 ### Output
 
-- The output format matches the suggested format in the task description. You can view this in the [documentation](https://documenter.getpostman.com/view/33618537/2sAYdcqs4G#1233915a-cec2-4785-8a01-62e06e77761e).
+- The output format matches the suggested format in the task description. You can view this in the [documentation](https://documenter.getpostman.com/view/33618537/2sAYdcqs4G#1233915a-cec2-4785-8a01-62e06e77761e) in the example response sections.
 
 ### Considerations for Improvement
 
@@ -47,6 +47,7 @@ Design and implement a system to identify the 10 most similar roles to the Plan 
 - **Title Accuracy**: Some PDFs don't have accurate titles based on metadata. A more robust implementation for title extraction would be beneficial.
 - **Error Handling**: While fairly robust, error handling could be improved.
 - **Stale Data**: The program scrapes job descriptions from PDFs on the website, missing updates, changes, and new job descriptions unless manually tracked. This leans towards users uploading PDFs in bulk to ensure we have the most relevant data. There are potential workarounds to this though.
+- **Responsive Design**: Ensure the site is responsive to provide a seamless experience across all devices.
 
 ## Running the Program Locally
 
