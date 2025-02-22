@@ -17,7 +17,7 @@ Design and implement a system to identify the 10 most similar roles to the Plan 
 
 - **Frontend**: Developed with React for its ease of use and scalability. The frontend is deployed to Cloudflare [here](https://holly-6uz.pages.dev/).
 - **Backend**: Implemented using Express.js for its scalability, lightweight nature, and extendability. The backend is hosted on Render.
-- **Database**: Chose MongoDB over Supabase to ensure continuous availability without downtime, as the free version of Supabase spins down after some time.
+- **Database**: Chose MongoDB over Supabase to ensure continuous availability without downtime, as the free version of Supabase spins down after some time. The implementation using Supabase would be very similar. MongoDB was chosen solely for its availability.
 
 ### Key Design Decisions
 
@@ -42,7 +42,7 @@ Design and implement a system to identify the 10 most similar roles to the Plan 
 
 - **Authentication**: Implement user accounts and authentication to manage document uploads by different districts.
 - **Performance**: Introduce pagination for job listings to improve loading times. Currently, all 300+ jobs are fetched at once on the homepage.
-- **Prompt Optimization**: Adjust the verbosity of the OpenAI for the similarity reason for efficiency. We can do this by adjusting the prompt.
+- **Prompt Optimization**: Adjust the wordiness of the OpenAI similarity reason. It's currently quite long. We can do this by fine-tuning and adjusting the prompt.
 - **Vector Search Tuning**: Modify the number of candidates and limit in the vector search for better results.
 - **Title Accuracy**: Some PDFs don't have accurate titles based on metadata. A more robust implementation for title extraction would be beneficial.
 - **Error Handling**: While fairly robust, error handling could be improved.
