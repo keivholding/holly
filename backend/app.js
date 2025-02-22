@@ -8,10 +8,12 @@ const app = express();
 
 app.use(morgan('dev'));
 
-// TO DO --> change origin
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin:
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:5173'
+        : 'https://holly-6uz.pages.dev',
   })
 );
 
