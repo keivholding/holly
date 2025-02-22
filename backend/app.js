@@ -17,7 +17,7 @@ app.use(
   })
 );
 
-app.use('/jobs', jobRouter);
+app.use('/api/v1/jobs', jobRouter);
 
 app.use((err, req, res, next) => {
   const status = err.status || 500;
