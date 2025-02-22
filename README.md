@@ -92,6 +92,8 @@ Requirements:
 - Be concise and specific. Do not make your response long. It's key to keep it short so it's useful.
 - Don't mention jobA and jobB. Mention their titles if applicable.
 - Just give a text output. No special styling or special characters like *.
+- Don't mention the structure of both documents.
+- Don't mention how both are for Long beach.
 "
 ```
 
