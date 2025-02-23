@@ -5,7 +5,7 @@ const SimilarityHeader = ({ jobTitle, pdfLink }) => {
     <div className="space-y-3 text-center">
       <h1>Similar Roles</h1>
       <p className="text-subtle">
-        Top 10 similar position to{' '}
+        Top 10 similar positions to{' '}
         <Link
           to={pdfLink}
           target="_blank"
